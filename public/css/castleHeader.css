@@ -68,7 +68,30 @@ html, body
 
 	margin: 0 auto;
 
-	outline: 1px solid pink;
+	outline: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.castleHeader-extend
+{
+	width: 1300px;
+	height: 560px;
+
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: 0 auto;
+
+	outline: 1px solid rgba(0, 255, 0, 0.5);
+}
+
+.castleHeader-extendL
+{
+	transform: translateX(-100%);
+}
+
+.castleHeader-extendR
+{
+	transform: translateX(100%);
 }
 
 /* !!! RESPONSIVE !!! */
