@@ -58,6 +58,19 @@ html, body
 	left: 0; top: 0;
 }
 
+.castleHeader-center
+{
+	width: 1300px;
+	height: 560px;
+
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: 0 auto;
+
+	outline: 1px solid pink;
+}
+
 /* !!! RESPONSIVE !!! */
 
 /* MOBILE */
