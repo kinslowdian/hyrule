@@ -31,6 +31,33 @@ html, body
 	overflow: hidden;
 }
 
+.castleHeader-viewFinder
+{
+	width: inherit;
+	height: inherit;
+
+	position: relative;
+}
+
+.castleHeader-scene
+{
+	width: inherit;
+	height: 560px;
+
+	position: relative;
+}
+
+
+.castleHeader-sky
+{
+	width: inherit;
+	height: 440px;
+	background: linear-gradient(to bottom, #020715 0%,#7f2fa5 90%,#14029e 100%);
+
+	position: absolute;
+	left: 0; top: 0;
+}
+
 /* !!! RESPONSIVE !!! */
 
 /* MOBILE */
@@ -39,7 +66,13 @@ html, body
 	.castleHeader-wrapper
 	{
 		max-height: 310px;
-	}	
+	}
+
+	.castleHeader-viewFinder
+	{
+		transform: translateY(-250px);
+	}
+
 }
 
 /* PHABLET */
@@ -48,6 +81,11 @@ html, body
 	.castleHeader-wrapper
 	{
 		max-height: 280px;
+	}
+
+	.castleHeader-viewFinder
+	{
+		transform: translateY(-280px);
 	}	
 }
 
@@ -58,6 +96,11 @@ html, body
 	{
 		max-height: 560px;
 	}
+
+	.castleHeader-viewFinder
+	{
+		transform: translateY(0px);
+	}
 }
 
 /* DESKTOP */
@@ -67,4 +110,10 @@ html, body
 	{
 		max-height: 560px;
 	}
+
+	.castleHeader-viewFinder
+	{
+		transform: translateY(0px);
+	}
 }
+
