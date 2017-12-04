@@ -66,11 +66,29 @@ html, body
 	position: absolute;
 	left: 50%; top: 0;
 
-	transform: translateX(0%);
+	transform: translateX(-50%);
 
 	margin: 0 auto;
 
 	outline: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.castleHeader-center .castleHeader-mountainsC
+{
+	width: inherit;
+	height: inherit;
+
+	position: absolute;
+	left: 0; top: 0;
+}
+
+.castleHeader-center .castleHeader-landC
+{
+	width: inherit;
+	height: 210px;
+
+	position: absolute;
+	left: 0; bottom: 0;
 }
 
 .castleHeader-extend
@@ -89,11 +107,33 @@ html, body
 .castleHeader-extendL
 {
 	transform: translateX(-100%);
+
+	background: rgba(255, 255, 255, 0.4);
 }
 
 .castleHeader-extendR
 {
 	transform: translateX(100%);
+
+	background: rgba(5, 5, 5, 0.4);
+}
+
+/* !!! ART !!! */
+
+.gfx-mountainsC
+{
+	background-image: url(../img/mountainsC@1x.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+}
+
+.gfx-landC
+{
+	background-image: url(../img/landC@2x.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
 }
 
 /* !!! RESPONSIVE !!! */
