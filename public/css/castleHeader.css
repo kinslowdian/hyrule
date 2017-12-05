@@ -79,6 +79,21 @@ html, body
 	position: absolute;
 }
 
+.starTwinkle
+{
+	animation-name: starTwinkleFrames;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	/*animation-duration: 1000ms;*/
+}
+
+@keyframes starTwinkleFrames
+{
+	0%		{opacity: 1;}
+	50%		{opacity: 0.3;}
+	100%	{opacity: 1;}
+}
+
 .castleHeader-center
 {
 	width: 1300px;
