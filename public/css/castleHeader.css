@@ -58,6 +58,27 @@ html, body
 	left: 0; top: 0;
 }
 
+.castleHeader-star0
+{
+	width: 1px;
+	height: 1px;
+
+	background: #ebe5c2;
+
+	position: absolute;
+}
+
+.castleHeader-star1
+{
+	width: 4px;
+	height: 4px;
+
+	background: #ebe5c2;
+	border-radius: 50%;
+
+	position: absolute;
+}
+
 .castleHeader-center
 {
 	width: 1300px;
