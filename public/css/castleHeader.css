@@ -18,6 +18,11 @@ html, body
 
 /* !!! MAIN !!! */
 
+.tween
+{
+	backface-visibility: hidden;
+}
+
 .castleHeader-wrapper
 {
 	width: 100%;
@@ -118,6 +123,56 @@ html, body
 	left: 0; top: 0;
 }
 
+.castleHeader-castle
+{
+	width: 300px;
+	height: 280px;
+
+	position: absolute;
+	right:320px; bottom: 0;
+}
+
+.castleHeader-castle .castleHeader-lights
+{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	left: 0; top: 0;
+
+	animation: lightFrames 200ms ease-in-out infinite;
+}
+
+@keyframes lightFrames
+{
+	0%		{opacity: 1;}
+	50%		{opacity: 0.8;}
+	100%	{opacity: 1;}
+}
+
+.castleHeader-castle .castleHeader-flag
+{
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	left: 0; top: 0;
+
+	animation: flagFrames 200ms steps(10) infinite;
+}
+
+@keyframes flagFrames
+{
+	0% { background-position: 0px 0px; }
+	100% { background-position: 0px -500px; }
+}
+
+.castleHeader-castle .castleHeader-main
+{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	left: 0; top: 0;
+}
+
 .castleHeader-center .castleHeader-landC
 {
 	width: inherit;
@@ -167,6 +222,30 @@ html, body
 .gfx-landC
 {
 	background-image: url(../img/landC@2x.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
+}
+
+.gfx-castleLights
+{
+	background-image: url(../img/castleLights@2x.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;	
+}
+
+.gfx-castleFlag
+{
+	background-image: url(../img/castleFlag@2x.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-y;
+	background-size: 300px 600px;
+}
+
+.gfx-castleMain
+{
+	background-image: url(../img/castleMain@2x.png);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: 100%;

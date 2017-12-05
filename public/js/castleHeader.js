@@ -22,7 +22,7 @@ function castleHeader_starsInit()
 
 	stars.maxW 		= displayInfo.w;
 	stars.maxH 		= 440;
-	stars.totalFill = 100;
+	stars.totalFill = 60;
 
 	stars.html0 = '<div class="castleHeader-star0"><div></div></div>';
 	stars.html1 = '<div class="castleHeader-star1"><div></div></div>';
@@ -52,7 +52,7 @@ function castleHeader_starsBuild()
 		s0.y = Math.round(Math.random() * (stars.maxH - 10) + 10);
 		s0.d = Math.round(Math.random() * (1000 - 200) + 200);
 		s0.c = 'star0_' + s0.n;
-		s0.h = '<div class="castleHeader-star0 starTwinkle ' + s0.c + '" style="transform: translate(' + s0.x + 'px, ' + s0.y + 'px); animation-duration: ' + s0.d + 'ms;"><div></div></div>';
+		s0.h = '<div class="castleHeader-star0 starTwinkle ' + s0.c + '" style="transform: translate(' + s0.x + 'px, ' + s0.y + 'px); animation-duration: ' + s0.d + 'ms;"><div class="tween"></div></div>';
 
 		htmlPopulate0 += s0.h;
 
@@ -72,7 +72,7 @@ function castleHeader_starsBuild()
 		s1.y = Math.round(Math.random() * (stars.maxH - 10) + 10);
 		s1.d = Math.round(Math.random() * (1000 - 200) + 200);
 		s1.c = 'star1_' + s1.n;
-		s1.h = '<div class="castleHeader-star1 starTwinkle ' + s1.c + '" style="transform: translate(' + s1.x + 'px, ' + s1.y + 'px); animation-duration: ' + s1.d + 'ms;"><div></div></div>';
+		s1.h = '<div class="castleHeader-star1 starTwinkle ' + s1.c + '" style="transform: translate(' + s1.x + 'px, ' + s1.y + 'px); animation-duration: ' + s1.d + 'ms;"><div class="tween"></div></div>';
 
 		htmlPopulate1 += s1.h;
 
