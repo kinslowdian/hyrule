@@ -263,7 +263,8 @@ html, body
 
 	.castleHeader-viewFinder
 	{
-		transform: translateY(-250px);
+		/*transform: translateY(-250px);*/
+		transform: translateY(-170px);
 	}
 
 }
@@ -278,7 +279,8 @@ html, body
 
 	.castleHeader-viewFinder
 	{
-		transform: translateY(-280px);
+		/*transform: translateY(-280px);*/
+		transform: translateY(-190px);
 	}	
 }
 
