@@ -72,7 +72,7 @@ function castleHeader_starsBuild()
 		s1.y = Math.round(Math.random() * (stars.maxH - 10) + 10);
 		s1.d = Math.round(Math.random() * (1000 - 200) + 200);
 		s1.c = 'star1_' + s1.n;
-		s1.h = '<div class="castleHeader-star1 starTwinkle ' + s1.c + '" style="transform: translate(' + s1.x + 'px, ' + s1.y + 'px); animation-duration: ' + s1.d + 'ms;"><div class="tween"></div></div>';
+		s1.h = '<div class="castleHeader-star1 starTwinkle ' + s1.c + ' gfx-star" style="transform: translate(' + s1.x + 'px, ' + s1.y + 'px); animation-duration: ' + s1.d + 'ms;"><div class="tween"></div></div>';
 
 		htmlPopulate1 += s1.h;
 
