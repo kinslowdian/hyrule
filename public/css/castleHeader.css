@@ -165,17 +165,37 @@ html, body
 .castleHeader-castle .castleHeader-flag
 {
 	width: 300px;
-	height: 50px;
+	height: 100px;
 	position: absolute;
 	left: 0; top: 0;
 
-	animation: flagFrames 200ms steps(10) infinite;
+	/*animation: flagFrames 200ms steps(10) infinite;*/
+}
+
+.castleHeader-castle .castleHeader-flagType0
+{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0; top:0;
+
+	animation: flagFrames 200ms steps(4) infinite;
+}
+
+.castleHeader-castle .castleHeader-flagA
+{
+	transform: translate(36px, 29px);
+}
+
+.castleHeader-castle .castleHeader-flagC
+{
+	transform: translate(266px, 29px);
 }
 
 @keyframes flagFrames
 {
 	0% { background-position: 0px 0px; }
-	100% { background-position: 0px -500px; }
+	100% { background-position: 0px -80px; }
 }
 
 .castleHeader-castle .castleHeader-main
@@ -262,12 +282,28 @@ html, body
 	background-size: 100%;	
 }
 
-.gfx-castleFlag
+/*.gfx-castleFlag
 {
 	background-image: url(../img/castleFlag@2x.png);
 	background-position: 0px 0px;
 	background-repeat: repeat-y;
 	background-size: 300px 600px;
+}*/
+
+.gfx-castleFlagType0
+{
+	background-image: url(../img/flagNew0Sheet@2x.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-y;
+	background-size: 20px 80px;
+}
+
+.gfx-castleFlagType1
+{
+	background-image: url(../img/flagNew1Sheet@2x.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-y;
+	background-size: 20px 80px;
 }
 
 .gfx-castleMain
