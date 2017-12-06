@@ -152,7 +152,7 @@ html, body
 	position: absolute;
 	left: 0; top: 0;
 
-	animation: lightFrames 200ms ease-in-out infinite;
+	animation: lightFrames 800ms ease-in-out infinite;
 }
 
 @keyframes lightFrames
