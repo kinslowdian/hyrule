@@ -9,7 +9,7 @@ function castleHeader_init()
 {
 	var delay;
 
-	trace("castleHeader_init();");
+	// trace("castleHeader_init();");
 
 	displayInfo = {};
 
@@ -20,7 +20,7 @@ function castleHeader_init()
 
 	castleHeader_starsInit();
 
-	delay = setTimeout(castleHeader_reveal, 1 * 1000);
+	delay = setTimeout(castleHeader_reveal, 1.2 * 1000);
 }
 
 function castleHeader_starsInit()
@@ -29,7 +29,6 @@ function castleHeader_starsInit()
 
 	stars.maxW 		= displayInfo.w;
 	stars.maxH 		= 440;
-	// stars.totalFill = 60;
 	stars.totalFill = Math.ceil(stars.maxW * 0.03);
 
 	stars.html0 = '<div class="castleHeader-star0"><div></div></div>';

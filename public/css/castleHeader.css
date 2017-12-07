@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* !!! BASIC STYLING FOR DEMO IGNORE !!! */
+
 html, body
 {
 	width: 100%;
@@ -16,7 +18,7 @@ html, body
 	position: relative;
 }
 
-/* !!! MAIN !!! */
+/* !!! MAIN CASTLE HEADER STYLING!!! */
 
 .tween
 {
@@ -91,8 +93,6 @@ html, body
 {
 	width: inherit;
 	height: 440px;
-	background: linear-gradient(to bottom, #020715 0%, #7f2fa5 70%, #14029e 100%);
-	background: linear-gradient(to bottom, rgba(23,8,33,1) 30%,rgba(245,196,154,1) 100%);
 	background: linear-gradient(to bottom, rgba(21,7,30,1) 20%,rgba(126,62,74,1) 50%,rgba(245,196,154,1) 100%);
 
 	position: absolute;
@@ -121,9 +121,6 @@ html, body
 {
 	width: 4px;
 	height: 4px;
-
-/*	background: #ebe5c2;
-	border-radius: 50%;*/
 
 	position: absolute;
 }
@@ -154,8 +151,6 @@ html, body
 	transform: translateX(-50%);
 
 	margin: 0 auto;
-
-	/*outline: 1px solid rgba(255, 0, 0, 0.5);*/
 }
 
 .castleHeader-center .castleHeader-mountainsC
@@ -368,7 +363,6 @@ html, body
 
 	.castleHeader-viewFinder
 	{
-		/*transform: translateY(-250px);*/
 		transform: translateY(-170px);
 	}
 
@@ -384,7 +378,6 @@ html, body
 
 	.castleHeader-viewFinder
 	{
-		/*transform: translateY(-280px);*/
 		transform: translateY(-190px);
 	}	
 }
