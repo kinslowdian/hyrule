@@ -78,18 +78,12 @@ html, body
 	left: 0; top: 0;
 }
 
-.castleHeader-skyadd, .castleHeader-stars0, .castleHeader-stars1
+.castleHeader-stars0, .castleHeader-stars1
 {
 	width: inherit;
 	height: inherit;
 
 	position: absolute;
-}
-
-.castleHeader-skyadd
-{
-/*	background: #d65f8c;
-	opacity: 0.2;*/
 }
 
 .castleHeader-star0
