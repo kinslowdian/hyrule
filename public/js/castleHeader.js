@@ -51,7 +51,7 @@ function castleHeader_starsBuild()
 		s0.n = i;
 		s0.x = Math.round(Math.random() * ((stars.maxW - 10) - 10) + 10);
 		s0.y = Math.round(Math.random() * (stars.maxH - 10) + 10);
-		s0.d = Math.round(Math.random() * (3000 - 1000) + 1000);
+		s0.d = Math.round(Math.random() * (5000 - 2500) + 2500);
 		s0.c = 'star0_' + s0.n;
 		s0.h = '<div class="castleHeader-star0 starTwinkle ' + s0.c + '" style="transform: translate(' + s0.x + 'px, ' + s0.y + 'px); animation-duration: ' + s0.d + 'ms;"><div class="tween"></div></div>';
 

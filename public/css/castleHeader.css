@@ -101,7 +101,7 @@ html, body
 {
 	animation-name: starTwinkleFrames;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: linear;
 	/*animation-duration: 1000ms;*/
 }
 
@@ -168,8 +168,6 @@ html, body
 	height: 100px;
 	position: absolute;
 	left: 0; top: 0;
-
-	/*animation: flagFrames 200ms steps(10) infinite;*/
 }
 
 .castleHeader-castle .castleHeader-flagType0, .castleHeader-castle .castleHeader-flagType1
@@ -179,7 +177,7 @@ html, body
 	position: absolute;
 	left: 0; top:0;
 
-	animation: flagFrames 200ms steps(4) infinite;
+	animation: flagFrames 600ms steps(4) infinite;
 }
 
 .castleHeader-castle .castleHeader-flagA
@@ -286,14 +284,6 @@ html, body
 	background-position: center bottom;
 	background-size: 100%;	
 }
-
-/*.gfx-castleFlag
-{
-	background-image: url(../img/castleFlag@2x.png);
-	background-position: 0px 0px;
-	background-repeat: repeat-y;
-	background-size: 300px 600px;
-}*/
 
 .gfx-castleFlagType0
 {
