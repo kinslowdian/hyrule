@@ -172,7 +172,7 @@ html, body
 	/*animation: flagFrames 200ms steps(10) infinite;*/
 }
 
-.castleHeader-castle .castleHeader-flagType0
+.castleHeader-castle .castleHeader-flagType0, .castleHeader-castle .castleHeader-flagType1
 {
 	width: 20px;
 	height: 20px;
@@ -185,6 +185,11 @@ html, body
 .castleHeader-castle .castleHeader-flagA
 {
 	transform: translate(36px, 29px);
+}
+
+.castleHeader-castle .castleHeader-flagB
+{
+	transform: translate(151px, 9px);
 }
 
 .castleHeader-castle .castleHeader-flagC
