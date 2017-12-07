@@ -3,9 +3,12 @@ var trace = function(msg){ console.log(msg); };
 
 var displayInfo;
 var stars;
+var dark;
 
 function castleHeader_init()
 {
+	var delay;
+
 	trace("castleHeader_init();");
 
 	displayInfo = {};
@@ -13,7 +16,11 @@ function castleHeader_init()
 	displayInfo.w = screen.width;
 	displayInfo.h = screen.height;
 
+	dark = document.querySelector(".castleHeader-wrapper .castleHeader-darken");
+
 	castleHeader_starsInit();
+
+	delay = setTimeout(castleHeader_reveal, 1 * 1000);
 }
 
 function castleHeader_starsInit()
@@ -81,6 +88,11 @@ function castleHeader_starsBuild()
 	}
 
 	stars.layer1.innerHTML = htmlPopulate1;
+}
+
+function castleHeader_reveal()
+{
+	dark.classList.remove("castleHeader-darken-default");
 }
 
 
